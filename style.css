@@ -1,0 +1,180 @@
+/* ===========================
+   recruit専用デザイン（外部公開用）
+=========================== */
+
+.recruit-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f7f7f7;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ファーストビュー */
+.recruit-hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.recruit-hero-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.recruit-hero-sub {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.recruit-img-placeholder {
+  width: 100%;
+  height: 220px;
+  background: #eaeaea;
+  border-radius: 8px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* CTAボタン */
+.recruit-cta {
+  text-align: center;
+}
+
+.recruit-cta-btn {
+  display: inline-block;
+  background: #FF6FA8;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.recruit-cta-btn:hover {
+  background: #019CAE;
+}
+
+/* セクション */
+.recruit-section {
+  margin-bottom: 40px;
+}
+
+.recruit-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0 20px;
+}
+
+/* カード */
+.recruit-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  margin-bottom: 25px;
+}
+
+/* 3カラム */
+.recruit-three-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recruit-col {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.recruit-icon-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #019CAE;
+}
+
+/* リスト */
+.recruit-list {
+  padding-left: 20px;
+}
+
+.recruit-list li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* FAQ（アコーディオン） */
+.recruit-accordion-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+.recruit-accordion-btn {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+  border: none;
+}
+
+.recruit-accordion-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #019CAE;
+  border-bottom: 2px solid #019CAE;
+  transform: translateY(-50%) rotate(45deg);
+  transition: 0.3s;
+}
+
+.recruit-accordion-item.active .recruit-accordion-icon {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.recruit-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+}
+
+.recruit-accordion-content p {
+  padding: 14px 0 18px;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .recruit-hero-title {
+    font-size: 22px;
+  }
+  .recruit-three-col {
+    flex-direction: column;
+  }
+  .recruit-col {
+    flex: 1 1 100%;
+  }
+  .recruit-cta-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 17px;
+  }
+}
