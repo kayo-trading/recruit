@@ -155,7 +155,6 @@ body {
   padding: 16px;
   border-radius: 8px;
   margin-top: 20px;
-  border-left: 6px solid #FF6FA8;
 }
 
 /* FAQ */
@@ -177,7 +176,6 @@ body {
   position: relative;
   background: #fff;
   border: none;
-  border-left: 6px solid #019CAE;
 }
 
 .recruit-accordion-icon {
