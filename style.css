@@ -307,24 +307,24 @@ body {
   }
 }
 
-/* 仕事の厳しさ（ソフト版） */
+/* 仕事の厳しさ（最終版） */
 .recruit-hard-box {
   background: #FFF4E5;
   padding: 16px;
   border-radius: 8px;
   margin-top: 20px;
-  border-left: none; /* ← 装飾削除 */
+  border-left: none; /* ← 装飾削除でスッキリ */
 }
 
 .recruit-hard-box h4 {
   margin-bottom: 10px;
   font-size: 17px;
   font-weight: 700;
-  color: #000; /* ← 黒に統一 */
+  color: #000; /* ← 他見出しと統一 */
 }
 
 .recruit-hard-box ul {
-  padding-left: 18px; /* ← 他と揃える */
+  padding-left: 16px; /* ← 他ボックスと揃える */
 }
 
 .recruit-hard-box li {
