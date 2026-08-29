@@ -304,3 +304,29 @@ body {
     box-sizing: border-box;
   }
 }
+
+
+/* 仕事の厳しさ（注意喚起ボックス） */
+.recruit-hard-box {
+  background: #FFF4E5;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 6px solid #FF9A3D;
+}
+
+.recruit-hard-box h4 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #D96A00;
+}
+
+.recruit-hard-box ul {
+  padding-left: 20px;
+}
+
+.recruit-hard-box li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
