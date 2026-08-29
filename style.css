@@ -341,3 +341,51 @@ body {
 .recruit-footer a:hover {
   color: #FF6FA8;
 }
+
+/* HEROボタン */
+.recruit-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.recruit-hero-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.recruit-hero-btn--blue {
+  background: #019CAE;
+}
+
+.recruit-hero-btn--blue:hover {
+  background: #007C8A;
+}
+
+.recruit-hero-btn--pink {
+  background: #FF6FA8;
+}
+
+.recruit-hero-btn--pink:hover {
+  background: #E85C94;
+}
+
+@media (max-width: 768px) {
+  .recruit-hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .recruit-hero-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
