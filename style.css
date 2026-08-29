@@ -147,14 +147,16 @@ body {
   padding: 16px;
   border-radius: 8px;
   margin-top: 20px;
+  border-left: none; /* ← 装飾削除 */
 }
 
-/* 求める人物像（追加） */
+/* 求める人物像 */
 .recruit-person-box {
   background: #fff7f9;
   padding: 16px;
   border-radius: 8px;
   margin-top: 20px;
+  border-left: none; /* ← 装飾削除 */
 }
 
 /* FAQ */
@@ -240,7 +242,7 @@ body {
   }
 }
 
-/* 募集要項（差し替え） */
+/* 募集要項 */
 .recruit-card {
   background: #fff;
   padding: 22px;
@@ -305,24 +307,24 @@ body {
   }
 }
 
-
-/* 仕事の厳しさ（注意喚起ボックス） */
+/* 仕事の厳しさ（ソフト版） */
 .recruit-hard-box {
   background: #FFF4E5;
   padding: 16px;
   border-radius: 8px;
   margin-top: 20px;
+  border-left: none; /* ← 装飾削除 */
 }
 
 .recruit-hard-box h4 {
   margin-bottom: 10px;
   font-size: 17px;
   font-weight: 700;
-  color: #D96A00;
+  color: #000; /* ← 黒に統一 */
 }
 
 .recruit-hard-box ul {
-  padding-left: 20px;
+  padding-left: 20px; /* ← 他と揃える */
 }
 
 .recruit-hard-box li {
