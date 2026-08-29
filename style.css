@@ -321,3 +321,23 @@ body {
   margin-bottom: 6px;
   font-size: 15px;
 }
+
+
+/* フッター */
+.recruit-footer {
+  text-align: center;
+  padding: 24px 0;
+  margin-top: 40px;
+  color: #666;
+  font-size: 14px;
+}
+
+.recruit-footer a {
+  color: #019CAE;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.recruit-footer a:hover {
+  color: #FF6FA8;
+}
