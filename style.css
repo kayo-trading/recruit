@@ -1,119 +1,170 @@
 /* ===========================
-   recruit専用デザイン（外部公開用）
+   recruit専用デザイン（完全版）
 =========================== */
 
+/* 全体 */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  margin: 0;
+}
+
+/* ラッパー（旧CSSの良い部分を統合） */
 .recruit-wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  background: #f7f7f7;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #333;
 }
 
-/* ファーストビュー */
+/* ロゴ */
+.recruit-logo {
+  width: 240px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .recruit-logo {
+    width: 180px;
+  }
+}
+
+/* ===========================
+   HERO（メインビジュアル）
+=========================== */
+
 .recruit-hero {
   text-align: center;
   padding: 40px 20px;
 }
 
-.recruit-hero-title {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 10px;
+.recruit-hero-catch {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .recruit-hero-sub {
-  font-size: 15px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 24px;
 }
 
-.recruit-img-placeholder {
+.recruit-hero-image img {
   width: 100%;
-  height: 220px;
-  background: #eaeaea;
-  border-radius: 8px;
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  color: #777;
+  border-radius: 12px;
+  margin-bottom: 24px;
 }
 
-/* CTAボタン */
-.recruit-cta {
-  text-align: center;
-}
-
-.recruit-cta-btn {
+/* CTAボタン（旧CSSのデザインを統合） */
+.recruit-hero-cta {
   display: inline-block;
   background: #FF6FA8;
   color: #fff;
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 16px;
-  max-width: 100%;
-  box-sizing: border-box;
   text-decoration: none;
 }
 
-.recruit-cta-btn:hover {
+.recruit-hero-cta:hover {
   background: #019CAE;
 }
 
-/* セクション */
+/* ===========================
+   セクション
+=========================== */
+
 .recruit-section {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .recruit-section-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
-  margin: 30px 0 20px;
+  margin-bottom: 20px;
 }
 
-/* カード */
-.recruit-card {
-  background: #fff;
-  padding: 22px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  margin-bottom: 25px;
-}
+/* ===========================
+   募集職種カード
+=========================== */
 
-/* 3カラム */
-.recruit-three-col {
+.recruit-job-cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
+  margin-top: 32px;
 }
 
-.recruit-col {
-  flex: 1 1 calc(50% - 20px);
+.recruit-job-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  flex: 1;
 }
 
-.recruit-icon-title {
-  font-size: 17px;
+.recruit-job-card-title {
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 8px;
-  color: #019CAE;
+  margin-bottom: 16px;
 }
 
-/* リスト */
-.recruit-list {
-  padding-left: 20px;
-}
-
-.recruit-list li {
-  margin-bottom: 6px;
+.recruit-job-lead {
   font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
 
-/* FAQ（アコーディオン） */
+.recruit-job-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+  border-left: 6px solid #019CAE;
+  padding-left: 10px;
+}
+
+.recruit-job-list {
+  margin-bottom: 16px;
+  padding-left: 18px;
+}
+
+.recruit-job-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.recruit-job-link {
+  display: inline-block;
+  background: #FF6FA8;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.recruit-job-link:hover {
+  background: #019CAE;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .recruit-job-cards {
+    flex-direction: column;
+  }
+}
+
+/* ===========================
+   FAQ（アコーディオン）
+=========================== */
+
+.recruit-accordion {
+  margin-top: 20px;
+}
+
 .recruit-accordion-item {
   background: #fff;
   border-radius: 8px;
@@ -132,6 +183,7 @@
   position: relative;
   background: #fff;
   border: none;
+  border-left: 6px solid #019CAE;
 }
 
 .recruit-accordion-icon {
@@ -159,20 +211,19 @@
 
 .recruit-accordion-content p {
   padding: 14px 0 18px;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
-/* レスポンシブ */
+/* ===========================
+   レスポンシブ補強
+=========================== */
+
 @media (max-width: 768px) {
-  .recruit-hero-title {
+  .recruit-hero-catch {
     font-size: 22px;
   }
-  .recruit-three-col {
-    flex-direction: column;
-  }
-  .recruit-col {
-    flex: 1 1 100%;
-  }
-  .recruit-cta-btn {
+  .recruit-hero-cta {
     width: 100%;
     padding: 14px;
     font-size: 17px;
