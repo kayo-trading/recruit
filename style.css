@@ -389,3 +389,33 @@ body {
   }
 }
 
+/* TOPに戻るボタン（ふわっと表示） */
+.recruit-top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #FF6FA8;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.recruit-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.recruit-top-btn:hover {
+  background: #019CAE;
+  transform: translateY(-3px);
+}
+
