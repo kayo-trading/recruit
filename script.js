@@ -1,3 +1,6 @@
+// ===========================
+// FAQ アコーディオン
+// ===========================
 document.querySelectorAll('.recruit-accordion-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const item = btn.parentElement;
@@ -9,4 +12,17 @@ document.querySelectorAll('.recruit-accordion-btn').forEach(btn => {
       content.style.maxHeight = null;
     }
   });
+});
+
+// ===========================
+// TOPに戻るボタン（ふわっと表示）
+// ===========================
+const topBtn = document.querySelector('.recruit-top-btn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) {
+    topBtn.classList.add('show');
+  } else {
+    topBtn.classList.remove('show');
+  }
 });
