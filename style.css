@@ -10,16 +10,14 @@ body {
   margin: 0;
 }
 
-/* PC幅調整（スクショの問題を解決） */
+/* PC幅調整 */
 .recruit-wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* ===========================
-   ロゴ
-=========================== */
+/* ロゴ */
 .recruit-logo {
   width: 240px;
   display: block;
@@ -32,9 +30,7 @@ body {
   }
 }
 
-/* ===========================
-   HERO（ファーストビュー）
-=========================== */
+/* HERO */
 .recruit-hero {
   text-align: center;
   padding: 40px 20px;
@@ -57,7 +53,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* CTAボタン（スマホ右側margin問題を解決） */
 .recruit-hero-cta-wrap {
   text-align: center;
 }
@@ -80,13 +75,10 @@ body {
   .recruit-hero-cta {
     width: 100%;
     box-sizing: border-box;
-    margin-right: 0;
   }
 }
 
-/* ===========================
-   セクション共通
-=========================== */
+/* セクション */
 .recruit-section {
   margin: 40px 0;
 }
@@ -97,9 +89,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* ===========================
-   募集職種概要（営業・企画）
-=========================== */
+/* 募集職種概要 */
 .recruit-job-summary {
   display: flex;
   gap: 20px;
@@ -134,9 +124,7 @@ body {
   }
 }
 
-/* ===========================
-   職種カード（営業・企画）
-=========================== */
+/* 職種カード */
 .recruit-job-card {
   background: #fff;
   padding: 28px;
@@ -161,9 +149,16 @@ body {
   margin-top: 20px;
 }
 
-/* ===========================
-   FAQ（アコーディオン）
-=========================== */
+/* 求める人物像（追加） */
+.recruit-person-box {
+  background: #fff7f9;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 6px solid #FF6FA8;
+}
+
+/* FAQ */
 .recruit-accordion-item {
   background: #fff;
   border-radius: 8px;
@@ -212,9 +207,7 @@ body {
   padding: 14px 0 18px;
 }
 
-/* ===========================
-   社員インタビュー
-=========================== */
+/* 社員インタビュー */
 .recruit-three-col {
   display: flex;
   gap: 20px;
@@ -249,9 +242,7 @@ body {
   }
 }
 
-/* ===========================
-   募集要項
-=========================== */
+/* 募集要項（差し替え） */
 .recruit-card {
   background: #fff;
   padding: 22px;
@@ -264,35 +255,53 @@ body {
 }
 
 .recruit-list li {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   font-size: 15px;
 }
 
-/* ===========================
-   応募フォーム
-=========================== */
-.recruit-cta {
-  text-align: center;
-  margin: 20px 0;
+/* 応募フォーム（2列カード） */
+.recruit-entry-cards {
+  display: flex;
+  gap: 20px;
 }
 
-.recruit-cta-btn {
+.recruit-entry-card {
+  flex: 1;
+  background: #fff;
+  padding: 22px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.recruit-entry-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.recruit-entry-card p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.recruit-entry-btn {
   display: inline-block;
   background: #FF6FA8;
   color: #fff;
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 16px;
   text-decoration: none;
 }
 
-.recruit-cta-btn:hover {
+.recruit-entry-btn:hover {
   background: #019CAE;
 }
 
 @media (max-width: 768px) {
-  .recruit-cta-btn {
+  .recruit-entry-cards {
+    flex-direction: column;
+  }
+  .recruit-entry-btn {
     width: 100%;
     box-sizing: border-box;
   }
