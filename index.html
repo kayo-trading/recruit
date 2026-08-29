@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>カヨトイズ採用ページ</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カヨトイズ採用ページ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="recruit-header">
-  <img src="img/kayo_logo.png" alt="カヨトイズ ロゴ" class="recruit-logo">
-</header>
+<div class="recruit-wrapper">
 
-<section class="recruit-hero">
-  <h1 class="recruit-hero-catch">＼ アイデアも提案も、商品になる会社 ／</h1>
-  <p class="recruit-hero-sub">
-    未経験歓迎｜20〜30代活躍｜自社商品＆OEM｜人気キャラクターIP多数
-  </p>
+  <!-- 1 ロゴ -->
+  <header class="recruit-header">
+    <img src="img/kayo_logo.png" alt="カヨトイズ ロゴ" class="recruit-logo">
+  </header>
 
-  <div class="recruit-hero-image">
-    <img src="img/hero_main.jpg" alt="採用メインビジュアル">
-  </div>
+  <!-- 2〜5 ファーストビュー -->
+  <section class="recruit-hero">
+    <h1 class="recruit-hero-catch">＼ アイデアも提案も、商品になる会社 ／</h1>
+    <p class="recruit-hero-sub">未経験歓迎｜20〜30代活躍｜自社商品＆OEM｜人気キャラクターIP多数</p>
 
-  <a href="#entry" class="recruit-hero-cta">まずは話を聞いてみる</a>
-</section>
+    <div class="recruit-hero-image">
+      <img src="img/hero_main.jpg" alt="採用メインビジュアル">
+    </div>
 
-<section class="recruit-section">
-  <h2 class="recruit-section-title">募集職種</h2>
+    <div class="recruit-hero-cta-wrap">
+      <a href="#entry" class="recruit-hero-cta">まずは話を聞いてみる</a>
+    </div>
+  </section>
 
-  <div class="recruit-job-cards">
+  <!-- 6 募集職種概要 -->
+  <section class="recruit-section">
+    <h2 class="recruit-section-title">募集職種</h2>
 
-    <!-- 営業職 -->
+    <div class="recruit-job-summary">
+      <div class="recruit-job-summary-item">
+        <h3>📣 営業職</h3>
+        <p>全国展開する大手小売チェーンへの提案を担当し、自分の企画した商品が全国の店頭に並ぶ仕事です。</p>
+        <a href="#sales-detail" class="recruit-job-summary-link">営業職の職種を詳しく見る</a>
+      </div>
+
+      <div class="recruit-job-summary-item">
+        <h3>🎨 企画職</h3>
+        <p>商品のアイデア出しから仕様決定まで、ものづくりの中心を担うクリエイティブな仕事です。</p>
+        <a href="#plan-detail" class="recruit-job-summary-link">企画職の職種を詳しく見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 営業職カード -->
+  <section class="recruit-section" id="sales-detail">
+    <h2 class="recruit-section-title">📣 営業職の詳しい仕事内容</h2>
+
     <div class="recruit-job-card">
-      <h3 class="recruit-job-card-title">📣 営業職</h3>
-
-      <p class="recruit-job-lead">
-        全国展開する大手小売チェーンへの提案を担当し、<br>
-        自社商品・OEM商品の商談、発注、仕様調整まで幅広く関わる仕事です。
-      </p>
-
-      <h4 class="recruit-job-subtitle">仕事内容</h4>
+      <h3>仕事内容</h3>
       <ul class="recruit-job-list">
         <li>大手小売チェーンへの商品提案</li>
         <li>自社商品の企画提案・売場提案</li>
@@ -51,35 +64,71 @@
         <li>展示会での来場者対応・商品説明</li>
       </ul>
 
-      <h4 class="recruit-job-subtitle">向いている人</h4>
-      <ul class="recruit-job-list">
-        <li>人と話すことが好き</li>
-        <li>行動力がある</li>
-        <li>大手企業と仕事をしてみたい</li>
-        <li>企画にも挑戦したい</li>
-        <li>変化を楽しめるタイプ</li>
-      </ul>
+      <div class="recruit-job-box">
+        <h4>向いている人</h4>
+        <ul>
+          <li>人と話すことが好き</li>
+          <li>行動力がある</li>
+          <li>大手企業と仕事をしてみたい</li>
+          <li>企画にも挑戦したい</li>
+          <li>変化を楽しめるタイプ</li>
+        </ul>
+      </div>
 
-      <h4 class="recruit-job-subtitle">向いていない人</h4>
-      <ul class="recruit-job-list">
-        <li>人と話す仕事が苦手</li>
-        <li>新しいことに挑戦したくない</li>
-        <li>変化のある環境が苦手</li>
-      </ul>
-
-      <a href="#" class="recruit-job-link">営業職の詳細を見る</a>
+      <div class="recruit-job-box">
+        <h4>向いていない人</h4>
+        <ul>
+          <li>人と話す仕事が苦手</li>
+          <li>新しいことに挑戦したくない</li>
+          <li>変化のある環境が苦手</li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <!-- 企画職 -->
+  <!-- 8 営業職FAQ -->
+  <section class="recruit-section">
+    <h2 class="recruit-section-title">📣 営業職のよくある質問</h2>
+
+    <div class="recruit-accordion">
+      <div class="recruit-accordion-item">
+        <button class="recruit-accordion-btn">
+          Q：玩具業界未経験でも大丈夫ですか？
+          <span class="recruit-accordion-icon"></span>
+        </button>
+        <div class="recruit-accordion-content">
+          <p>A：問題ありません。ほとんどの社員が未経験からスタートしています。</p>
+        </div>
+      </div>
+
+      <div class="recruit-accordion-item">
+        <button class="recruit-accordion-btn">
+          Q：中国語は必要ですか？
+          <span class="recruit-accordion-icon"></span>
+        </button>
+        <div class="recruit-accordion-content">
+          <p>A：不要です。中国・香港スタッフとは日本語でコミュニケーションできます。</p>
+        </div>
+      </div>
+
+      <div class="recruit-accordion-item">
+        <button class="recruit-accordion-btn">
+          Q：企画経験がなくても応募できますか？
+          <span class="recruit-accordion-icon"></span>
+        </button>
+        <div class="recruit-accordion-content">
+          <p>A：歓迎します。営業職でも企画に関わる機会が多く、入社後に学べます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 企画職カード -->
+  <section class="recruit-section" id="plan-detail">
+    <h2 class="recruit-section-title">🎨 企画職の詳しい仕事内容</h2>
+
     <div class="recruit-job-card">
-      <h3 class="recruit-job-card-title">🎨 企画職</h3>
-
-      <p class="recruit-job-lead">
-        商品のアイデア出しから仕様決定まで、<br>
-        自社商品・OEM商品の企画を担当し、ものづくりの中心を担う仕事です。
-      </p>
-
-      <h4 class="recruit-job-subtitle">仕事内容</h4>
+      <h3>仕事内容</h3>
       <ul class="recruit-job-list">
         <li>キャラクター雑貨・ベビー用品の企画立案</li>
         <li>IP監修対応（パウ・パトロール、リラックマ等）</li>
@@ -91,93 +140,118 @@
         <li>展示会での企画説明・新商品の提案</li>
       </ul>
 
-      <h4 class="recruit-job-subtitle">向いている人</h4>
-      <ul class="recruit-job-list">
-        <li>アイデアを形にするのが好き</li>
-        <li>ものづくりに興味がある</li>
-        <li>キャラクターコンテンツが好き</li>
-        <li>人と話すことが好き</li>
-        <li>行動力がある</li>
+      <div class="recruit-job-box">
+        <h4>向いている人</h4>
+        <ul>
+          <li>アイデアを形にするのが好き</li>
+          <li>ものづくりに興味がある</li>
+          <li>キャラクターコンテンツが好き</li>
+          <li>人と話すことが好き</li>
+          <li>行動力がある</li>
+        </ul>
+      </div>
+
+      <div class="recruit-job-box">
+        <h4>向いていない人</h4>
+        <ul>
+          <li>人と話す仕事が苦手</li>
+          <li>新しいことに挑戦したくない</li>
+          <li>変化のある環境が苦手</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 企画職FAQ -->
+  <section class="recruit-section">
+    <h2 class="recruit-section-title">🎨 企画職のよくある質問</h2>
+
+    <div class="recruit-accordion">
+      <div class="recruit-accordion-item">
+        <button class="recruit-accordion-btn">
+          Q：企画経験がなくても応募できますか？
+          <span class="recruit-accordion-icon"></span>
+        </button>
+        <div class="recruit-accordion-content">
+          <p>A：営業経験があれば歓迎します。企画は入社後に学べる環境です。</p>
+        </div>
+      </div>
+
+      <div class="recruit-accordion-item">
+        <button class="recruit-accordion-btn">
+          Q：キャラクターIPの知識がなくても大丈夫ですか？
+          <span class="recruit-accordion-icon"></span>
+        </button>
+        <div class="recruit-accordion-content">
+          <p>A：問題ありません。監修対応はマニュアルがあり、先輩がサポートします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 社員インタビュー -->
+  <section class="recruit-section">
+    <h2 class="recruit-section-title">社員インタビュー</h2>
+
+    <div class="recruit-three-col">
+
+      <div class="recruit-col">
+        <img src="img/icon_A.png" alt="企画/営業 Tさん" class="recruit-icon">
+        <h3 class="recruit-icon-title">企画・営業 Tさん（20代／入社3年目）</h3>
+        <p>入社当初からOEM案件に関わり、キャラクター商品の企画提案を担当。自分のアイデアが商品化される瞬間が一番のやりがいです。</p>
+      </div>
+
+      <div class="recruit-col">
+        <img src="img/icon_B.png" alt="デザイナー Uさん" class="recruit-icon">
+        <h3 class="recruit-icon-title">デザイナー Uさん（20代／入社2年目）</h3>
+        <p>キャラクター監修対応やパッケージデザインを担当。営業・企画と連携しながら、デザインで商品の魅力を最大化しています。</p>
+      </div>
+
+      <div class="recruit-col">
+        <img src="img/icon_C.png" alt="EC Tさん" class="recruit-icon">
+        <h3 class="recruit-icon-title">EC担当 Tさん（30代／入社1年目）</h3>
+        <p>自社ECサイトの運営と販促企画を担当。現場の声を商品企画にフィードバックし、売上に直結する提案を行っています。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 12 募集要項 -->
+  <section class="recruit-section">
+    <h2 class="recruit-section-title">募集要項</h2>
+
+    <div class="recruit-card">
+      <ul class="recruit-list">
+        <li><strong>雇用形態：</strong> 正社員（試用期間3ヶ月）</li>
+        <li><strong>勤務地：</strong> 東京都北区（王子駅徒歩5分）</li>
+        <li><strong>勤務時間：</strong> 9:00〜18:00（休憩1時間）</li>
+        <li><strong>給与：</strong> 経験・能力を考慮の上決定</li>
+        <li><strong>休日休暇：</strong> 土日祝休み・夏季休暇・年末年始休暇</li>
+        <li><strong>福利厚生：</strong> 社会保険完備・交通費支給・社員割引制度</li>
       </ul>
+    </div>
+  </section>
 
-      <h4 class="recruit-job-subtitle">向いていない人</h4>
-      <ul class="recruit-job-list">
-        <li>人と話す仕事が苦手</li>
-        <li>新しいことに挑戦したくない</li>
-        <li>変化のある環境が苦手</li>
-      </ul>
+  <!-- 13 応募フォーム -->
+  <section class="recruit-section" id="entry">
+    <h2 class="recruit-section-title">応募フォーム</h2>
 
-      <a href="#" class="recruit-job-link">企画職の詳細を見る</a>
+    <p>まずは話を聞いてみたいという方は、カジュアル面談からどうぞ。</p>
+    <div class="recruit-cta">
+      <a href="https://forms.gle/your-casual-interview-form" target="_blank" class="recruit-cta-btn">
+        カジュアル面談に申し込む
+      </a>
     </div>
 
-  </div>
-</section>
-
-<section class="recruit-section">
-  <h2 class="recruit-section-title">📣 営業職のよくある質問</h2>
-
-  <div class="recruit-accordion">
-
-    <div class="recruit-accordion-item">
-      <button class="recruit-accordion-btn">
-        Q：玩具業界未経験でも大丈夫ですか？
-        <span class="recruit-accordion-icon"></span>
-      </button>
-      <div class="recruit-accordion-content">
-        <p>A：問題ありません。ほとんどの社員が未経験からスタートしています。</p>
-      </div>
+    <p>すぐに応募したい方はこちらから。</p>
+    <div class="recruit-cta">
+      <a href="https://forms.gle/your-application-form" target="_blank" class="recruit-cta-btn">
+        応募フォームへ進む
+      </a>
     </div>
+  </section>
 
-    <div class="recruit-accordion-item">
-      <button class="recruit-accordion-btn">
-        Q：中国語は必要ですか？
-        <span class="recruit-accordion-icon"></span>
-      </button>
-      <div class="recruit-accordion-content">
-        <p>A：不要です。中国・香港スタッフとは日本語でコミュニケーションできます。</p>
-      </div>
-    </div>
-
-    <div class="recruit-accordion-item">
-      <button class="recruit-accordion-btn">
-        Q：企画経験がなくても応募できますか？
-        <span class="recruit-accordion-icon"></span>
-      </button>
-      <div class="recruit-accordion-content">
-        <p>A：歓迎します。営業職でも企画に関わる機会が多く、入社後に学べます。</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="recruit-section">
-  <h2 class="recruit-section-title">🎨 企画職のよくある質問</h2>
-
-  <div class="recruit-accordion">
-
-    <div class="recruit-accordion-item">
-      <button class="recruit-accordion-btn">
-        Q：企画経験がなくても応募できますか？
-        <span class="recruit-accordion-icon"></span>
-      </button>
-      <div class="recruit-accordion-content">
-        <p>A：営業経験があれば歓迎します。企画は入社後に学べる環境です。</p>
-      </div>
-    </div>
-
-    <div class="recruit-accordion-item">
-      <button class="recruit-accordion-btn">
-        Q：キャラクターIPの知識がなくても大丈夫ですか？
-        <span class="recruit-accordion-icon"></span>
-      </button>
-      <div class="recruit-accordion-content">
-        <p>A：問題ありません。監修対応はマニュアルがあり、先輩がサポートします。</p>
-      </div>
-    </div>
-
-  </div>
-</section>
+</div>
 
 <script src="script.js"></script>
 </body>
