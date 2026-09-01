@@ -20,7 +20,7 @@ document.querySelectorAll('.recruit-accordion-btn').forEach(btn => {
 const topBtn = document.querySelector('.recruit-top-btn');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) {
+  if (window.scrollY > 300) {
     topBtn.classList.add('show');
   } else {
     topBtn.classList.remove('show');
