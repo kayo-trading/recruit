@@ -419,3 +419,22 @@ body {
   transform: translateY(-3px);
 }
 
+@media (max-width: 768px) {
+  .recruit-section {
+    margin: 60px 0; /* セクション間を広げる */
+  }
+
+  .recruit-card,
+  .recruit-job-card,
+  .recruit-entry-card {
+    padding: 26px; /* 内側余白を少し増やす */
+  }
+
+  body {
+    font-size: 16px; /* 全体フォントを少し大きく */
+  }
+
+  .recruit-section-title {
+    font-size: 22px; /* 見出しを少し小さくしてバランス調整 */
+  }
+}
