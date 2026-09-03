@@ -419,13 +419,6 @@ body {
   transform: translateY(-3px);
 }
 
-.recruit-note {
-  background: #f7f7f7;
-  padding: 12px 16px;
-  border-radius: 6px;
-  font-size: 14px;
-  line-height: 1.6;
-}
 
 
 @media (max-width: 768px) {
