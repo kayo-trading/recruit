@@ -419,6 +419,15 @@ body {
   transform: translateY(-3px);
 }
 
+.recruit-note {
+  background: #f7f7f7;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
 @media (max-width: 768px) {
 
   /* セクション余白を以前の40pxに戻す */
@@ -442,12 +451,4 @@ body {
   .recruit-section-title {
     font-size: 24px;
   }
-}
-
-.recruit-note {
-  background: #f7f7f7;
-  padding: 12px 16px;
-  border-radius: 6px;
-  font-size: 14px;
-  line-height: 1.6;
 }
